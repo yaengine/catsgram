@@ -9,7 +9,7 @@ services:
     environment:
       - POSTGRES_DB=catsgram
       - POSTGRES_USER=dbuser
-      - POSTGRES_PASSWORD=12345
+      - POSTGRES_PASSWORD=
     healthcheck:
       test: pg_isready -q -d $$POSTGRES_DB -U $$POSTGRES_USER
       timeout: 5s
